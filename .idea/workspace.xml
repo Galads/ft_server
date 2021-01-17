@@ -6,10 +6,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bff4466-bde4-406c-9119-99c92ae0f289" name="Default Changelist" comment="">
+    <list default="true" id="6bff4466-bde4-406c-9119-99c92ae0f289" name="Default Changelist" comment="update dockerfile">
+      <change afterPath="$PROJECT_DIR$/src/configure_shell_nginx.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/script_install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/script_install.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,11 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -63,8 +68,16 @@
       <workItem from="1610774112675" duration="2659000" />
       <workItem from="1610899628497" duration="134000" />
       <workItem from="1610899796074" duration="2403000" />
-      <workItem from="1610903486859" duration="2287000" />
+      <workItem from="1610903486859" duration="8044000" />
     </task>
+    <task id="LOCAL-00001" summary="update dockerfile">
+      <created>1610905792658</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610905792658</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dockerfile" />
   </component>
 </project>
