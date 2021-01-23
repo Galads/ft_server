@@ -8,7 +8,6 @@ echo "GRANT SELECT, INSERT, UPDATE, DELETE ON *.* TO
 
 echo "FLUSH PRIVILEGES;" | mysql -u root
 
-
 mysql -u root < usr/share/phpmyadmin/sql/create_tables.sql
 
 ln -s /usr/share/phpmyadmin /var/www/test.loc/
