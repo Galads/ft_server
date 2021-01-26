@@ -9,7 +9,6 @@ cd /usr/share/phpmyadmin
 cp /config.inc.php /usr/share/phpmyadmin
 
 #service mysql start
-#
 #echo "CREATE DATABASE example_database" | mysql -u root
 
 
