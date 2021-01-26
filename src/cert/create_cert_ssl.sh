@@ -12,9 +12,3 @@ openssl req -newkey rsa:4096 \
 mkdir /etc/nginx/ssl
 mv /brice.crt /etc/nginx/ssl/
 mv /brice.key /etc/nginx/ssl/
-
-#ufw allow 'Nginx Full'
-#ufw delete allow 'Nginx HTTP'
-
-#may be
-#openssl dhparam -out /etc/nginx/dhparam.pem 4096

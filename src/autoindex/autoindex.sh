@@ -1,16 +1,34 @@
 #!/bin/bash
-
 val=$1
 defineOn="on"
 defineOff="off"
-grepLine=$(cat /etc/nginx/sites-available/tfile)
+grepLine=$(grep "autoindex" test.loc | cut -c13-14)
 
-echo "already set index $grepLine"
+checkSetAlready ()
+{
+	if [ $grepLine = $1 ]
+	then
+		echo "index already set, exit"
+		exit 1
+	fi
+}
+
+if [ -z $val ]
+then
+	echo "Error, argument not found"
+	exit 1
+fi
 
 if [ $val = $defineOn ]
 then
-   echo "index 1: $1"
+	checkSetAlready on
+	sed -i 's/autoindex off/autoindex on/' test.loc
+	echo "index set: $1"
 elif [ $val = $defineOff ]
 then
-   echo "index 2: $1"
+	checkSetAlready of
+	sed -i 's/autoindex on/autoindex off/' test.loc
+	echo "index set: $1"
+else
+	echo "Valid argument not found"
 fi
