@@ -24,11 +24,13 @@ then
 	checkSetAlready on
 	sed -i 's/autoindex off/autoindex on/' test.loc
 	echo "index set: $1"
+	service nginx restart
 elif [ $val = $defineOff ]
 then
 	checkSetAlready of
 	sed -i 's/autoindex on/autoindex off/' test.loc
 	echo "index set: $1"
+	service nginx restart
 else
 	echo "Valid argument not found"
 fi
