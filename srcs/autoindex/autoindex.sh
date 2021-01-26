@@ -10,7 +10,6 @@ checkSetAlready ()
 	if [ $grepLine = $1 ]
 	then
 		echo "index already set, exit"
-		cd -
 		exit 1
 	fi
 }
@@ -18,7 +17,6 @@ checkSetAlready ()
 if [ -z $val ]
 then
 	echo "Error, argument not found"
-	cd -
 	exit 1
 fi
 
@@ -28,15 +26,12 @@ then
 	sed -i 's/autoindex off/autoindex on/' test.loc
 	echo "index set: $1"
 	service nginx restart
-	cd -
 elif [ $val = $defineOff ]
 then
 	checkSetAlready of
 	sed -i 's/autoindex on/autoindex off/' test.loc
 	echo "index set: $1"
 	service nginx restart
-	cd -
 else
 	echo "Valid argument not found"
-	cd -
 fi
